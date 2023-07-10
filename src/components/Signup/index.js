@@ -20,7 +20,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "https://day-42-be.onrender.com/api/users";
+			const url = "https://back-check.onrender.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			setMsg(res.message);
 		} catch (error) {
